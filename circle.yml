@@ -15,6 +15,6 @@ deployment:
   master:
     branch: master
     commands:
-      - docker login -e larsbuur@gmail.com -p $DOCKER_PASSWORD
+      - docker login -u larsbuur -e larsbuur@gmail.com -p $DOCKER_PASSWORD
       - docker tag alpine-node-server larsbuur/alpine-node-server
       - docker push larsbuur/alpine-node-server
